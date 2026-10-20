@@ -26,8 +26,10 @@ Set-Location D:\githubProject\TheP_Android
 git pull --ff-only origin main
 # 上一步成功后继续；若提示冲突或无法快进，请先保留本地改动并处理分支差异。
 Set-Location .\the-p-android
-.\gradlew.bat assembleDebug
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-windows.ps1
 ```
+
+该脚本自动查找 Android Studio 自带或已安装的完整 JDK 21，临时为本次构建设置 Java 环境，退出后恢复。不会修改系统环境变量或旧工程。`-ExecutionPolicy Bypass` 仅作用于本次子进程，不修改系统策略。若 JDK 安装在自定义位置，可追加 `-JdkPath 'D:\Tools\jdk-21'`；未找到 JDK 21 时会明确停止，不再使用 Java 8 继续构建。只检查 Java 可追加 `-CheckOnly`。脚本不安装 JDK 或 Android SDK，SDK 仍由 Android Studio 配置。
 
 新 APK 的完整路径为 `D:\githubProject\TheP_Android\the-p-android\app\build\outputs\apk\debug\app-debug.apk`。
 Git 同步源码不会自动重新生成 APK；旧目录 `android\app\build\outputs\apk\debug` 的时间不代表 V5 的构建时间。

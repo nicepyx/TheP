@@ -43,3 +43,7 @@ bash scripts/cloud-gradle.sh -Dddmlib.getprop.timeout.sec=120 :core:database:con
 应用测试实际执行了生产 MainActivity 启动、The P 品牌显示、设置与进度导航；以及训练快照、上次重量、重复结束、独立计划选择、V5 备份往返、V4 幂等导入、无效输入拒绝和原生逐组录入。界面录入验证了 20.25 kg / 10 次的完成保存和 Room 中的 20250 克。
 
 当前实例最终完整仪器测试成功；这不代表小米 15 Pro 真机验收、发布环境或新任务恢复已完成。详细 XML 和 HTML 位于各模块 build 目录，可用上述命令重新生成。
+
+## Windows 构建辅助脚本
+
+新增 `scripts/build-windows.ps1`，解决 PowerShell 默认 Java 8 无法启动新工程的问题。使用官方校验和验证的 PowerShell 7.4.6，在云端验证了脚本语法、显式选择 JDK 21、拒绝 Java 8、旧 JAVA_HOME 指向 Java 8 时自动发现 JDK 21，以及退出后恢复环境变量。Windows 路径选择使用临时目录模拟；未在用户 Windows 电脑执行，不代表已完成本机 Windows 构建。脚本不安装软件、不永久修改环境变量。
