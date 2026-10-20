@@ -1,0 +1,62 @@
+/* FitWave 4.1 / A1 奶霜丝带: user-selected pastel white+pink design. */
+:root{--bg:#fff8fb;--bg2:#fff3f8;--panel:#fff;--panel2:#fff7fa;--line:#f4dbe5;--text:#522f43;--muted:#a27b90;--dim:#b699a9;--lime:#e875a4;--blue:#db5d90;--purple:#aa83b9;--orange:#d99363;--danger:#bc4b6a;--brandInk:#81415f;--brandGlow:#f3a7c8;--shadow:0 15px 38px rgba(194,98,140,.085)}
+body{background:radial-gradient(circle at 90% 8%,#ffe0edb8,transparent 34%),radial-gradient(circle at 4% 40%,#fff0f5,transparent 44%),linear-gradient(#fff9fb,#fff4f9)!important;color:var(--text)}
+body:before{content:'✿  ·  ✦   ✿   ·  ✦';position:fixed;right:-15px;top:92px;z-index:-1;opacity:.17;color:#ef90b5;font-size:33px;writing-mode:vertical-rl;pointer-events:none}
+.sea-environment{display:none!important}.brand-mascot{background:#fff4f9;border-color:#fce2ec;box-shadow:0 7px 18px #efa4be3c}
+.brand-word,.page-title,.section-header h2,.stat .big-number,.big-number,.workout-head h2{color:#854463!important}.brand-sub,.muted,.lead,.section-header p,.subtle-info{color:#a57e91!important}
+.brand-sub{letter-spacing:.06em}.mini-stat{color:#b34475!important;background:#ffebf3!important;border:1px solid #ffd5e6!important}
+.hero{background:linear-gradient(115deg,#ffe1ec,#fff7fb 59%,#ffd9e8)!important;border:1px solid #f6bfd3!important;box-shadow:0 19px 39px #eaa5bf45!important}
+.hero:before{border-color:#ffffffbb;box-shadow:0 0 0 28px #fff7,0 0 0 58px #fff3}.hero h1{color:#793c5c!important;text-shadow:0 1px #fff!important}.hero p,.hero .eyebrow{color:#99596f!important}
+.hero-girl{width:60%!important;right:-23px!important;bottom:-80px!important;max-width:280px!important}.hero-girl img{height:100%!important;width:100%!important;object-fit:contain!important;object-position:bottom right!important;top:0!important;right:0!important;filter:drop-shadow(0 12px 10px #eab2c46b)!important}
+.hero-round{background:conic-gradient(#e773a6 var(--pct),#fff9 0)!important}.hero-round:before{background:#fff1f6!important}.hero-round b{color:#a93a6c!important}.hero-round small{color:#b96d91!important}
+.primary,.focus-big-btn{background:linear-gradient(130deg,#ef85ad,#dc5a91)!important;color:#fff!important;box-shadow:0 8px 18px #e981a455!important}
+.primary:active,.focus-big-btn:active{filter:brightness(.94)}.secondary,.icon-btn{border:1px solid #efcadb!important;background:#fff7fb!important;color:#9b4e73!important}
+.day-tab,.day-line,.exercise-card,.workout-head,.notice,.stat,.panel,.focus-entry,.workshop-card,.meal,.ocean-quote{background:linear-gradient(145deg,#fff,#fff8fb)!important;border-color:#f2d5e1!important;color:#76445e!important;box-shadow:0 9px 25px #ce87a621!important}
+.day-tab.active,.filter-pill.is-active,.seg button.active{background:#ee8eaf!important;border-color:#ee8eaf!important;color:white!important}.day-tab.active b,.day-tab.active small{color:white!important}
+.workout-head{background:linear-gradient(105deg,#ffe2ed,#fff6fa)!important}.workout-head h2,.workout-head p,.workout-head .muted,.ex-top .muscle{color:#914d70!important}
+.chip,.pill-circle,.new-mark{background:#ffebf3!important;border-color:#f4ccd9!important;color:#a54d78!important}
+.chip.lime,.chip.cyan{background:#ffe6f1!important;border-color:#efc0d4!important;color:#a44273!important}
+.workshop-art,.wk-mon .workshop-art,.wk-tue .workshop-art,.wk-thu .workshop-art,.wk-sat .workshop-art,.wk-wed .workshop-art,.wk-sun .workshop-art{background:linear-gradient(130deg,#f2a4c0,#ffe3ef)!important}
+.workshop-glyph{color:#fff!important;text-shadow:0 3px 14px #cb6697c4!important}.workshop-body h3,.workshop-body p{color:#825169!important}
+.workshop-actions button,.filter-pill,.setting-row,.record-row,.info-grid>div,.stat{background:#fff9fc!important;border-color:#f1d5df!important;color:#9d5177!important}
+.ocean-quote{border-radius:17px}.ocean-quote-icon,.eyebrow,.text-link,.stat-icon{color:#d26794!important}.quote-mini{background:#ffe0ee!important;color:#aa4c7a!important}
+.focus-entry b,.focus-bubble,.focus-cue summary,.focus-last{color:#a34f78!important}.focus-entry p,.focus-bubble small{color:#b37d98!important}
+.meter{background:#ffe1eb!important}.meter>div{background:linear-gradient(90deg,#ffa5c6,#d95b90)!important}
+.mascot-float{background:linear-gradient(#fff,#ffe0ec)!important;border:2px solid white!important;box-shadow:0 6px 22px #e786b177!important;animation:a1MascotBob 3.8s ease-in-out infinite}.mascot-ping{background:#f39dc5!important}
+@keyframes a1MascotBob{50%{transform:translateY(-4px)}}
+.focus-app{background:linear-gradient(155deg,#fff0f7,#fffdfd 50%,#ffe1ec)!important;color:#6d4059!important}
+.focus-top small,.focus-progress,.focus-overline,.focus-ex-card p,.focus-cue p,.focus-cue summary{color:#ba618b!important}.focus-top b,.focus-ex-card h1,.focus-done h2,.focus-ex-card label{color:#874060!important}
+.focus-top>button,.focus-move button,.focus-step-input,.focus-cue,.focus-target,.focus-ex-card,.focus-done .focus-footer button{background:#fffaff!important;border-color:#f4d1e0!important;color:#9b4973!important}
+.focus-bubble{border-color:#f2bcd1!important;box-shadow:0 10px 24px #eb9db452!important}.focus-mascot-line img,.focus-done img,.result-mascot img{border-radius:50%!important;mask-image:none!important;-webkit-mask-image:none!important;object-fit:contain!important;animation:a1FaceBounce 3s ease-in-out infinite}
+@keyframes a1FaceBounce{50%{transform:translateY(-5px) rotate(2deg)}}
+.focus-step-input input,.focus-step-input button{color:#b34878!important}.focus-big-btn{min-height:61px}
+.recap-grid>div,.helper-tips>div,.insight-metrics>div,.insight-chart,.insight-advice{background:#fff5fa!important;border-color:#f2d4e1!important;color:#8b496c!important}
+.recap-grid b{color:#af457a}
+.timer-bar{background:#fff8fc!important;border-color:#efcade!important;color:#95516f!important}
+.heat-cell.heat-gym{background:#d65c90!important;border-color:#d65c90!important}.heat-cell.heat-card{background:#f5adc8!important;border-color:#f5adc8!important}
+.ocean-night{background:#362634!important;color:#f9e9f1!important}.ocean-night .panel,.ocean-night .workshop-card{background:#493446!important;color:#f9e9f1!important}
+/* Dedicated desktop companion control panel */
+.a1-pet-panel{background:linear-gradient(135deg,#fff9fc,#ffedf5)!important;border:1px solid #f0c7d9!important;box-shadow:0 14px 28px #dc82a52c!important}
+.a1-pet-head{display:flex;align-items:center;gap:12px;margin-bottom:15px}.a1-pet-head img{width:65px;height:65px;object-fit:contain;animation:a1FaceBounce 3.8s infinite}.a1-pet-head h2{margin:0;font-size:18px;color:#943c6a}.a1-pet-head p{font-size:11px;color:#aa6d8c;margin:4px 0 0}
+.a1-pet-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.a1-pet-actions button{min-height:44px;white-space:normal;font-size:12px}.a1-pet-preview{display:flex;gap:8px;align-items:center;background:#fff;border:1px solid #f2d5e1;border-radius:15px;padding:10px;margin:12px 0}
+.a1-pet-preview img{width:55px;height:55px}.a1-pet-status{font-size:12px;color:#9e5478}.a1-pet-status b{display:block;font-size:13px;color:#8c3766}
+.a1-pet-size{width:100%;accent-color:#e875a4;margin:10px 0}.a1-pet-panel .seg button{background:#fff!important;color:#a94f7d;border:1px solid #f0cfda}.a1-pet-panel .seg button.active{background:#e875a4!important;color:#fff!important}
+.a1-pet-note{font-size:11px;line-height:1.65;color:#aa718d;margin-top:11px}
+@media(max-width:380px){.a1-pet-actions button{font-size:11px}}@media(prefers-reduced-motion:reduce){.mascot-float,.focus-mascot-line img,.focus-done img,.result-mascot img,.a1-pet-head img{animation:none!important}}
+/* polish formerly blue micro-controls without changing the existing V4 business layout */
+.bottomnav{background:#fff8fdeb!important;border-top:1px solid #f4d8e4!important;box-shadow:0 -8px 27px #d98bad18!important}
+.bottomnav .nav-btn{color:#ac7c96!important}.bottomnav .nav-btn.active{background:#ffe8f1!important;color:#c55787!important}
+.bottomnav .nav-btn.active svg{stroke:#c55787!important}
+.day-date,.day-status,.day-line b,.day-line .day-status{color:#ac5e83!important}.day-line.today{background:#fff0f7!important;border-color:#eeadc7!important}
+.day-date strong{color:#ab4e7f!important}.day-date small{color:#bb84a1!important}
+.set-input,.field,.note-box,.set-row input,.form-field input{background:#fff8fc!important;color:#925575!important;border:1px solid #f1d2df!important}
+.set-check{color:#ba5d89!important;border-color:#f3ccdd!important;background:#fff2f7!important}
+.set-check[aria-pressed=true]{background:#e981a7!important;color:#fff!important}
+.ex-index,.ex-title-badge,.ex-more button,.pill-circle{background:#ffe6ef!important;color:#bc5c86!important;border-color:#efc9d9!important}
+.workshop-body,.workshop-actions button,.stat small,.meal header,.info-grid,.card-list,.data-row{color:#916078!important}
+.focus-cue,.focus-target{background:#fff2f8!important}.focus-bubble{color:#92496f!important}
+.focus-step-input input{background:transparent!important;border:0!important}.focus-step-input button{background:transparent!important;border:0!important}
+.focus-footer .focus-end-link{color:#ac6e8d!important}
+.hero-girl{bottom:-26px!important;height:330px!important}.hero-girl img{top:-72px!important;height:330px!important;object-fit:cover!important;object-position:center top!important}
+
+.a1-motion-off .mascot-float,.a1-motion-off .hero-girl img,.a1-motion-off [data-mascot],.a1-motion-off .a1-pet-head img{animation:none!important;transition:none!important}

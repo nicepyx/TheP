@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/fw_widget_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  android:orientation="vertical" android:padding="15dp" android:gravity="center_vertical"
+  android:background="@drawable/fitwave_widget_bg">
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="✦ FitWave · 奶霜丝带" android:textSize="11sp" android:textStyle="bold" android:textColor="#C45A88"/>
+  <TextView android:id="@+id/fw_widget_title" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="今天也要好好训练" android:textSize="18sp" android:textStyle="bold"
+    android:textColor="#8E315B" android:layout_marginTop="7dp" android:maxLines="1"/>
+  <TextView android:id="@+id/fw_widget_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="打开 FitWave 查看今日计划" android:textSize="11sp" android:textColor="#966E82"
+    android:layout_marginTop="3dp" android:maxLines="1"/>
+  <TextView android:id="@+id/fw_widget_progress" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="0 / 4 本周训练" android:textSize="12sp" android:textStyle="bold"
+    android:textColor="#DA6796" android:layout_marginTop="8dp" />
+</LinearLayout>

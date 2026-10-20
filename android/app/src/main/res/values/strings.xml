@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">FitWave 奶霜丝带</string>
+    <string name="title_activity_main">FitWave 奶霜丝带</string>
+    <string name="package_name">com.fitwave.personal</string>
+    <string name="custom_url_scheme">com.fitwave.personal</string>
+</resources>
