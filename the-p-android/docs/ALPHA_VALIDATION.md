@@ -47,3 +47,5 @@ bash scripts/cloud-gradle.sh -Dddmlib.getprop.timeout.sec=120 :core:database:con
 ## Windows 构建辅助脚本
 
 新增 `scripts/build-windows.ps1`，解决 PowerShell 默认 Java 8 无法启动新工程的问题。使用官方校验和验证的 PowerShell 7.4.6，在云端验证了脚本语法、显式选择 JDK 21、拒绝 Java 8、旧 JAVA_HOME 指向 Java 8 时自动发现 JDK 21，以及退出后恢复环境变量。Windows 路径选择使用临时目录模拟；未在用户 Windows 电脑执行，不代表已完成本机 Windows 构建。脚本不安装软件、不永久修改环境变量。
+
+2026-10-21 补充 SDK 自动查找：通过临时目录和 PowerShell 文件系统盘验证默认目录、两种 Android SDK 环境变量、只读旧工程配置、显式路径、本工程配置优先级及冲突/失效/缺失提示。验证了 Android Studio 的 Windows 盘符、反斜线、空格及 Unicode 转义解析；旧配置保持原字节，临时环境变量正常恢复。`-CheckOnly` 现检查 JDK 与 SDK。以上是云端脚本验证，用户 Windows 的真实 SDK 安装内容和实际编译结果仍待本机运行确认。

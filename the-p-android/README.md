@@ -29,7 +29,9 @@ Set-Location .\the-p-android
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-windows.ps1
 ```
 
-该脚本自动查找 Android Studio 自带或已安装的完整 JDK 21，临时为本次构建设置 Java 环境，退出后恢复。不会修改系统环境变量或旧工程。`-ExecutionPolicy Bypass` 仅作用于本次子进程，不修改系统策略。若 JDK 安装在自定义位置，可追加 `-JdkPath 'D:\Tools\jdk-21'`；未找到 JDK 21 时会明确停止，不再使用 Java 8 继续构建。只检查 Java 可追加 `-CheckOnly`。脚本不安装 JDK 或 Android SDK，SDK 仍由 Android Studio 配置。
+该脚本自动查找 Android Studio 自带或已安装的完整 JDK 21，以及已有 Android SDK。SDK 优先读取本工程的 `local.properties`；未配置时查找 `ANDROID_HOME` / `ANDROID_SDK_ROOT`、旧工程 `android/local.properties` 和用户默认 SDK 目录。旧配置只读，不复制或覆盖；本工程已有无效 `sdk.dir` 时会提示修正，不静默覆盖。
+
+脚本只临时设置本次构建的环境变量，退出后恢复，不修改系统环境变量或旧工程。`-ExecutionPolicy Bypass` 仅作用于本次子进程，不修改系统策略。自定义位置可追加 `-JdkPath 'D:\Tools\jdk-21'` 或 `-SdkPath 'D:\Android\Sdk'`（本工程已有 `sdk.dir` 时两者必须一致）。追加 `-CheckOnly` 仅检查 JDK 和 SDK，不执行构建。未找到工具时会明确停止，不自动安装 JDK 或 Android SDK；可通过 Android Studio 的 SDK Manager 安装 API 36 和所需构建工具。
 
 新 APK 的完整路径为 `D:\githubProject\TheP_Android\the-p-android\app\build\outputs\apk\debug\app-debug.apk`。
 Git 同步源码不会自动重新生成 APK；旧目录 `android\app\build\outputs\apk\debug` 的时间不代表 V5 的构建时间。
